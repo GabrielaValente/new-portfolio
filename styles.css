@@ -1,3 +1,7 @@
+      :root {
+          --primaryColor: #50fa7b;
+      }
+
       * {
           margin: 0;
           padding: 0;
@@ -7,6 +11,7 @@
       body {
           background: #282a36;
           font-family: 'Source Sans Pro', sans-serif;
+          color: #fafafa;
 
 
       }
@@ -33,6 +38,45 @@
       }
 
       header div a:hover {
-          color: #50fa7b;
+          color: var(--primaryColor);
           transition: color 200ms;
+      }
+
+      #wrapper {
+          text-align: center;
+          padding: 32px;
+      }
+
+      #wrapper img {
+          border-radius: 50%;
+          border: 5px solid var(--primaryColor);
+          margin-bottom: 32px;
+      }
+
+      #wrapper h1 {
+          font-size: 42px;
+          line-height: 52px;
+          font-weight: bold;
+
+      }
+
+      #wrapper h2 {
+          font-size: 24px;
+          line-height: 34px;
+          font-weight: normal;
+          margin-top: 8px;
+          opacity: 0.8;
+      }
+
+      #wrapper p {
+          max-width: 500px;
+          margin: 32px auto;
+          font-size: 24px;
+          line-height: 34px;
+          font-weight: normal;
+
+      }
+
+      #wrapper p a {
+          color: var(--primaryColor);
       }
