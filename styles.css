@@ -23,13 +23,13 @@
           background: rgba(0, 0, 0, 0.1)
       }
 
-      header div {
+      .links {
           text-align: center;
 
 
       }
 
-      header div a {
+      .links a {
           color: white;
           font-size: 18px;
           line-height: 28px;
@@ -37,7 +37,7 @@
           text-decoration: none;
       }
 
-      header div a:hover {
+      .links a:hover {
           color: var(--primaryColor);
           transition: color 200ms;
       }
@@ -51,6 +51,7 @@
           border-radius: 50%;
           border: 5px solid var(--primaryColor);
           margin-bottom: 32px;
+          height: 250px;
       }
 
       #wrapper h1 {
@@ -79,4 +80,9 @@
 
       #wrapper p a {
           color: var(--primaryColor);
+      }
+
+      #links-footer a {
+          border-bottom: 1px solid var(--primaryColor);
+
       }
