@@ -106,8 +106,6 @@
 
 
 
-
-
       /* === CARDS === */
 
 
@@ -143,4 +141,44 @@
           padding: 5px 20px;
           border-radius: 20px;
           text-align: center;
+      }
+
+      /* == MODAL == */
+
+      .modal-overlay {
+          background: rgba(39, 12, 38, 0.7);
+          width: 100%;
+          height: 100%;
+          position: fixed;
+          top: 0;
+          opacity: 0;
+          visibility: hidden;
+
+      }
+
+      .modal {
+          background-color: #fafafa;
+          width: 90%;
+          height: 90%;
+          margin: 5vh auto;
+          position: relative;
+      }
+
+      .modal .close-modal {
+          color: black;
+          position: absolute;
+          right: 18px;
+          top: 8px;
+          cursor: pointer;
+      }
+
+      .modal .close-modal>i {
+          font-size: 40px
+      }
+
+      /* == MODAL ACTIVE == */
+
+      .modal-overlay.active {
+          opacity: 1;
+          visibility: visible;
       }
