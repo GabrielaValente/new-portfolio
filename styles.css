@@ -1,6 +1,10 @@
       :root {
-          --primaryColor: #50fa7b;
-          --secondColor: #7159c1;
+          --primaryColor: #FCD8D4;
+          --secondColor: #FCD8D4;
+          --thirdColor: #FDF6F0;
+          --fourthColor: #F5C6AA;
+          --fifthColor: #9B72AA;
+
       }
 
       * {
@@ -10,18 +14,20 @@
       }
 
       body {
-          background: #282a36;
+          background: var(--thirdColor);
           font-family: 'Source Sans Pro', sans-serif;
-          color: #fafafa;
+          color: black;
 
 
       }
 
       /* Menu 'Sobre/Projetos' */
       header {
-          padding: 32px;
-          border-bottom: 1px solid #333;
-          background: rgba(0, 0, 0, 0.1)
+          padding: 42px;
+          border-bottom: 1px solid var(--primaryColor);
+          background: #FCD8D4;
+
+
       }
 
       .links {
@@ -31,7 +37,7 @@
       }
 
       .links a {
-          color: white;
+          color: black;
           font-size: 18px;
           line-height: 28px;
           margin: 0 16px;
@@ -39,9 +45,10 @@
       }
 
       .links a:hover {
-          color: var(--primaryColor);
+          color: var(--fifthColor);
           transition: color 200ms;
       }
+
 
       #wrapper {
           text-align: center;
@@ -59,6 +66,7 @@
           font-size: 42px;
           line-height: 52px;
           font-weight: bold;
+
 
       }
 
@@ -80,13 +88,25 @@
       }
 
       #wrapper p a {
-          color: var(--primaryColor);
+          color: var(--fifthColor);
       }
 
       #links-footer a {
           border-bottom: 1px solid var(--primaryColor);
+          font-size: 23px;
+          transition: color 200ms;
 
       }
+
+      #links-footer a:hover {
+          color: var(--fifthColor);
+          transition: color 200ms;
+
+      }
+
+
+
+
 
       /* === CARDS === */
 
